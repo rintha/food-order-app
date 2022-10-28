@@ -7,7 +7,7 @@ const CartProvider = props => {
 
     const addItemToCartHandler = (item) => {
         // items.push(item)
-        updateItems(...items,item);
+        updateItems([...items,{...item,quantity:1}]);
         console.log('inside addItemToCartHandler',cartContext)
     };
     
